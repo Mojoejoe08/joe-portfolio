@@ -1,0 +1,83 @@
+:root{
+    --first-color: #C6011F;
+    --second-color: #fd5c63;
+    --third-color: white;
+}
+
+*{
+   margin: 0;
+   padding: 0; 
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flexbox;
+}
+
+#sticky-nav{
+    height: 50px;
+    width: 100vw;
+    background-color: var(--first-color);
+    position: fixed;
+    color: white;
+}
+#sticky-nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: flex-end;
+}
+.navbar-buttons{
+    padding: 10px;
+    margin: 5px 4px 2px 4px;
+    width: 8vw;
+    text-align: center;
+    height: 2.5vh;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(45deg, #353935, #28282B);
+}
+header h1,p{
+    width: 100%;
+    text-align: center;
+}
+header h1{
+    font: 3.5em sans-serif;
+    font-weight: bold;
+    color: var(--third-color);
+    
+}
+header p{
+    color: var(--second-color);
+    font-style: italic;
+    font-size: 1.5em;
+}
+#project{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(180deg,var(--first-color),var(--second-color));
+}
+#project h2{
+    text-align: center;
+    color: var(--third-color);
+    padding: 3vh;
+}
+#project hr{
+    padding: 0 5px 0 5px;
+    width: 80vw;
+    margin: auto;
+}
+.project-items{
+    display: grid;
+    grid-template-columns: repeat(auto fit, minmax(320px, 1fr));
+    width: 100%;
+    grid-gap: 4rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
