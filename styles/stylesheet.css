@@ -9,6 +9,9 @@
    margin: 0;
    padding: 0; 
 }
+*, *::before, *::after {
+    box-sizing: inherit;
+}
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -67,31 +70,53 @@ header p{
     text-align: center;
     color: var(--third-color);
     padding: 3vh;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
 }
 #project hr{
     padding: 0 5px 0 5px;
     width: 80vw;
     margin: auto;
+    
 }
 .project-items{
     display: grid;
-    grid-template-columns: repeat(auto fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     width: 100%;
     grid-gap: 4rem;
     max-width: 1280px;
     margin: 0 auto;
     margin-bottom: 6rem;
+    text-align: center;
 }
 .project-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     width: 100%;
     max-width: 1280px;
-    gap: 4rem;
-    margin: 0px auto 6rem;
+    grid-gap: 4rem;
+    margin: 0 auto;
+    margin-bottom: 6rem;
 }
 .project-items{
-    width: px;
-    min-height: 200px;
-    max-height: 3vh;
+    width: 100%;
+}
+.project-items a{
+    background: linear-gradient(90deg, #353935, #28282B);
+    display: flex;
+    flex-direction: column;
+}
+.project-items a img{
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-items a figcaption{
+    display: block;
+    height: 5vh;
+    margin: auto;
+    color: white;
 }
