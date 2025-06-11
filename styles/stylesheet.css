@@ -38,6 +38,7 @@ body{
     text-align: center;
     height: 2.5vh;
 }
+/*** START OF HEADER ***/
 header{
     width: 100%;
     height: 100vh;
@@ -61,36 +62,34 @@ header p{
     font-style: italic;
     font-size: 1.5em;
 }
+/*** END OF HEADER ***/
+
+/*** START OF PROJECT ***/
 #project{
-    width: 100%;
-    min-height: 100vh;
+    text-align: center;
+    padding: 10rem 2rem;
     background: linear-gradient(180deg,var(--first-color),var(--second-color));
 }
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
 #project h2{
-    text-align: center;
     color: var(--third-color);
-    padding: 3vh;
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid var(--third-color);
+}
+h2 {
+    font-size: 4rem;
+}
+h1,h2{
     font-family: 'Raleway', sans-serif;
-    text-align: center;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-}
-#project hr{
-    padding: 0 5px 0 5px;
-    width: 80vw;
-    margin: auto;
-    
-}
-.project-items{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    width: 100%;
-    grid-gap: 4rem;
-    max-width: 1280px;
-    margin: 0 auto;
-    margin-bottom: 6rem;
+    font-weight: 700;
     text-align: center;
 }
+/*
 .project-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -99,10 +98,18 @@ header p{
     grid-gap: 4rem;
     margin: 0 auto;
     margin-bottom: 6rem;
-}
+}*/
 .project-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     width: 100%;
+    grid-gap: 4rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    text-align: center;
 }
+
 .project-items a{
     background: linear-gradient(90deg, #353935, #28282B);
     display: flex;
@@ -120,3 +127,7 @@ header p{
     margin: auto;
     color: white;
 }
+/*** END OF PROJECT ***/
+
+
+/**START OF CONTACT***/
