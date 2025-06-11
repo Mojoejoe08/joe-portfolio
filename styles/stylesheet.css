@@ -156,3 +156,25 @@ h1,h2{
     font-size: 1.5rem;
     gap: 1000px;
 }
+form {
+    width: 100vw;
+    max-width: 800px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+label{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+#userMessage{
+    font-size: 1rem;
+}
