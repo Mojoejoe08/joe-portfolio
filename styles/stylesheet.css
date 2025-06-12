@@ -178,3 +178,7 @@ label{
 #userMessage{
     font-size: 1rem;
 }
+
+#honeyPot{
+    display: none;
+}
