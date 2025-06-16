@@ -140,40 +140,75 @@ h1,h2{
 
 
 /**START OF CONTACT***/
+
 #contact{
     text-align: center;
     padding: 10rem 2rem;
 }
-.concact-icons {
+/* .concact-icons {
     display: grid;
     font-size: 3rem;
     grid-template-columns: repeat(5, 1fr);
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
-    align-items: center;
-}
+    align-items:stretch;
+    column-gap: 100px;
+    background-color: aqua;
+} */
 .contact-icons {
+    width: 100%;
     font-size: 1.5rem;
-    gap: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.contact-icons a{
+    width: 10%;
+}
+
+.contact-icons a:nth-of-type(1){
+    margin-left: 30%;
+    color: #1877F2;
+}
+.contact-icons a:nth-of-type(2){
+    color: #171515;
+}
+.contact-icons a:last-of-type{
+    margin-right: 30%;
+    color: #0077B5;
 }
 form {
-    width: 100vw;
+    width: 30vw;
+    height: 30vh;
     max-width: 800px;
     min-width: 300px;
-    margin: 0 auto;
+    margin: auto;
     padding-bottom: 2em;
+    background-color: var(--first-color);
+    border-radius: 8%;
 }
 fieldset {
     border: none;
     padding: 2rem 0;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    width: auto;
 }
-label{
+fieldset label{
+    color: white;
     display: flex;
     flex-direction: column;
     text-align: left;
+    padding: 0 10%;
+}
+fieldset button{
+    width: 50%;
+    margin-top: 5%;
+    align-self: center;
+}
+fieldset label input,textarea,button{
+    min-width: 200px;
 }
 #userMessage{
     font-size: 1rem;
